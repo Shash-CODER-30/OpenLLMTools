@@ -101,6 +101,10 @@ Run the tokenizer from the project directory:
 ```bash
 python Tokenizer.py
 ```
+or
+```bash
+python3 Tokenizer.py
+```
 
 It counts whitespace-delimited words in `data.txt` and writes `vocab.json`.
 Token ID `0` is reserved for `<unk>`. Vocabulary IDs are stable for a given
@@ -125,6 +129,10 @@ After vocabulary creation, run:
 
 ```bash
 python AutoTrainer.py
+```
+or
+```bash
+python3 AutoTrainer.py
 ```
 
 The trainer reads `data.txt` in blocks, trains one sequence at a time, and
@@ -156,6 +164,10 @@ Once `AutoTrainer.py` has produced `model_weights.pth`, start inference:
 
 ```bash
 python LLM.py
+```
+or
+```bash
+python3 LLM.py
 ```
 
 Enter a prompt and submit it with a blank line. Enter `KILL` to exit. Inference
